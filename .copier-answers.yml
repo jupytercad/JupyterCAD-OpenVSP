@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.6
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: leductrungxf@gmail.com
+author_name: Trung Le
+has_binder: false
+has_settings: false
+kind: server
+labextension_name: jupytercad_openvsp
+project_short_description: A JupyterCAD extension for OpenVSP
+python_name: jupytercad_openvsp
+repository: https://github.com/jupytercad/jupytercad-openvsp
+test: false
+
