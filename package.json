@@ -1,5 +1,5 @@
 {
-    "name": "jupytercad_openvsp",
+    "name": "@jupytercad/jupytercad-openvsp",
     "version": "0.1.0",
     "description": "A JupyterCAD extension for OpenVSP",
     "keywords": [
@@ -12,10 +12,7 @@
         "url": "https://github.com/jupytercad/jupytercad-openvsp/issues"
     },
     "license": "BSD-3-Clause",
-    "author": {
-        "name": "Trung Le",
-        "email": "leductrungxf@gmail.com"
-    },
+    "author": "JupyterCAD contributors",
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
         "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
@@ -55,6 +52,9 @@
         "watch:labextension": "jupyter labextension watch ."
     },
     "dependencies": {
+        "@jupytercad/base": "^2.0.0-alpha.7",
+        "@jupytercad/jupytercad-core": "^2.0.0-alpha.7",
+        "@jupytercad/schema": "^2.0.0-alpha.7",
         "@jupyterlab/application": "^4.0.0",
         "@jupyterlab/coreutils": "^6.0.0",
         "@jupyterlab/services": "^7.0.0"
@@ -94,17 +94,35 @@
     },
     "jupyterlab": {
         "discovery": {
-        "server": {
-            "managers": [
-                "pip"
-            ],
-            "base": {
-                "name": "jupytercad_openvsp"
+            "server": {
+                "managers": [
+                    "pip"
+                ],
+                "base": {
+                    "name": "jupytercad_openvsp"
+                }
             }
-        }
         },
         "extension": true,
-        "outputDir": "jupytercad_openvsp/labextension"
+        "outputDir": "jupytercad_openvsp/labextension",
+        "sharedPackages": {
+            "@jupytercad/base": {
+                "singleton": true,
+                "bundled": false
+            },
+            "@jupytercad/schema": {
+                "singleton": true,
+                "bundled": false
+            },
+            "@jupytercad/jupytercad-core": {
+                "singleton": true,
+                "bundled": false
+            },
+            "@jupyter/docprovider": {
+                "singleton": true,
+                "bundled": false
+            }
+        }
     },
     "eslintIgnore": [
         "node_modules",

@@ -23,7 +23,9 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "jupyter_server>=2.0.1,<3"
+    "jupyter_server>=2.0.1,<3",
+    "jupytercad_core>=2.0.0a7,<3",
+    "jupytercad_lab>=2.0.0a7,<3"
 ]
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
@@ -38,8 +40,8 @@ artifacts = ["jupytercad_openvsp/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupytercad_openvsp/labextension" = "share/jupyter/labextensions/jupytercad_openvsp"
-"install.json" = "share/jupyter/labextensions/jupytercad_openvsp/install.json"
+"jupytercad_openvsp/labextension" = "share/jupyter/labextensions/@jupytercad/jupytercad-openvsp"
+"install.json" = "share/jupyter/labextensions/@jupytercad/jupytercad-openvsp/install.json"
 "jupyter-config/server-config" = "etc/jupyter/jupyter_server_config.d"
 
 [tool.hatch.build.hooks.version]
@@ -77,3 +79,6 @@ before-build-python = ["jlpm clean:all"]
 
 [tool.check-wheel-contents]
 ignore = ["W002"]
+
+[project.entry-points.jupyter_ydoc]
+vsp = "jupytercad_openvsp.vsp3_ydoc:YVsp"
