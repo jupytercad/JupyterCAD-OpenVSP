@@ -1,11 +1,18 @@
 import shutil
 import tempfile
 from typing import Optional
-import openvsp as vsp
 from os.path import join
+
+try:
+    import openvsp as vsp
+except ImportError:
+    vsp = None
 
 
 def vsp3_to_stl(vsp_str: Optional[str]) -> str:
+    if not vsp:
+        return ""
+
     stl_str = ""
     if not vsp_str:
         return stl_str
