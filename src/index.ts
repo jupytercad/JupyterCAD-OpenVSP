@@ -16,8 +16,8 @@ import {
 } from '@jupyterlab/application';
 import { IThemeManager, WidgetTracker } from '@jupyterlab/apputils';
 import { JupyterCadWidgetFactory } from '@jupytercad/jupytercad-core';
-import { JupyterCadStlDoc } from '@jupytercad/jupytercad-core/lib/stlplugin/model';
 import { JupyterCadVspModelFactory } from './modelfactory';
+import { JupyterCadOVSPDoc } from './model';
 
 const FACTORY = 'JupyterCAD VSP3 Viewer';
 
@@ -68,7 +68,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     });
 
     const vspSharedModelFactory: SharedDocumentFactory = () => {
-      return new JupyterCadStlDoc();
+      return new JupyterCadOVSPDoc();
     };
     if (drive) {
       drive.sharedModelFactory.registerDocumentFactory(

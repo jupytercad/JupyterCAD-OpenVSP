@@ -52,9 +52,9 @@
         "watch:labextension": "jupyter labextension watch ."
     },
     "dependencies": {
-        "@jupytercad/base": "^2.0.0-alpha.7",
-        "@jupytercad/jupytercad-core": "^2.0.0-alpha.7",
-        "@jupytercad/schema": "^2.0.0-alpha.7",
+        "@jupytercad/base": "^2.0.0-alpha.8",
+        "@jupytercad/jupytercad-core": "^2.0.0-alpha.8",
+        "@jupytercad/schema": "^2.0.0-alpha.8",
         "@jupyterlab/application": "^4.0.0",
         "@jupyterlab/coreutils": "^6.0.0",
         "@jupyterlab/services": "^7.0.0"

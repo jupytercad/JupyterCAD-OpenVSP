@@ -11,4 +11,3 @@ project_short_description: A JupyterCAD extension for OpenVSP
 python_name: jupytercad_openvsp
 repository: https://github.com/jupytercad/jupytercad-openvsp
 test: false
-
