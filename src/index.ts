@@ -87,6 +87,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       tracker.add(widget);
       app.shell.activateById('jupytercad::leftControlPanel');
     });
+    console.log('jupytercad_openvsp:plugin is activated!');
   }
 };
 
