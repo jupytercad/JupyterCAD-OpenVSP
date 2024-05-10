@@ -1,5 +1,6 @@
 {
     "name": "@jupytercad/jupytercad-openvsp",
+    "private": "true",
     "version": "0.1.0",
     "description": "A JupyterCAD extension for OpenVSP",
     "keywords": [
