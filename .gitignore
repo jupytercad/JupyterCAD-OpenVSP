@@ -120,3 +120,6 @@ dmypy.json
 # Yarn cache
 .yarn/
 .jupyter_ystore.db
+
+**/ui-tests/test-results/
+**/ui-tests/playwright-report/
