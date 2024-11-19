@@ -116,7 +116,7 @@ jobs:
         shell: bash -l {0}
         run: |
           set -eux
-          pip install "jupyterlab>=4.0.0,<5" "jupytercad>=2.0.0a7" jupytercad_openvsp*.whl
+          pip install "jupyterlab>=4.0.0,<5" "jupytercad>=3.0.0a6" jupytercad_openvsp*.whl
 
       - name: Install OpenVSP
         shell: bash -l {0}
