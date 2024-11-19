@@ -994,6 +994,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jupytercad/jupytercad-openvsp@workspace:."
   dependencies:
+    "@jupyter/collaborative-drive": ^3.0.0
     "@jupytercad/base": ^3.0.0-alpha.6
     "@jupytercad/jupytercad-core": ^3.0.0-alpha.6
     "@jupytercad/schema": ^3.0.0-alpha.6

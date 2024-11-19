@@ -52,6 +52,7 @@
         "watch:labextension": "jupyter labextension watch ."
     },
     "dependencies": {
+        "@jupyter/collaborative-drive": "^3.0.0",
         "@jupytercad/base": "^3.0.0-alpha.6",
         "@jupytercad/jupytercad-core": "^3.0.0-alpha.6",
         "@jupytercad/schema": "^3.0.0-alpha.6",
@@ -118,7 +119,7 @@
                 "singleton": true,
                 "bundled": false
             },
-            "@jupyter/docprovider": {
+            "@jupyter/collaborative-drive": {
                 "singleton": true,
                 "bundled": false
             }
