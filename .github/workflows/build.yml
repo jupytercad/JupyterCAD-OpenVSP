@@ -122,7 +122,7 @@ jobs:
         shell: bash -l {0}
         run: |
           set -eux
-          wget https://openvsp.org/download.php?file=zips/current/linux/OpenVSP-3.41.1-Ubuntu-22.04_amd64.deb -O ovsp.deb
+          wget https://openvsp.org/download.php?file=zips/current/linux/OpenVSP-3.41.2-Ubuntu-22.04_amd64.deb -O ovsp.deb
           ar x ovsp.deb && tar -xf data.tar.gz
           python -m pip install ./opt/OpenVSP/python/utilities ./opt/OpenVSP/python/degen_geom ./opt/OpenVSP/python/openvsp_config ./opt/OpenVSP/python/openvsp
 
