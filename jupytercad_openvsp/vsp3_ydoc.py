@@ -1,9 +1,9 @@
 import json
-from typing import Any, Callable
 from functools import partial
+from typing import Any, Callable
 
-from pycrdt import Text
 from jupyter_ydoc.ybasedoc import YBaseDoc
+from pycrdt import Text
 
 from .loader import vsp3_to_stl
 
