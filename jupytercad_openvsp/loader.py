@@ -1,7 +1,7 @@
 import shutil
 import tempfile
-from typing import Optional
 from os.path import join
+from typing import Optional
 
 try:
     import openvsp as vsp
